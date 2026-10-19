@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frames - Image Gallery</title>
+  <link rel="icon" type="image/svg+xml" href="frames-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background glow -->
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+
+  <header class="header">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 48 48" aria-label="Frames logo">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#22d3ee"/>
+            <stop offset="0.5" stop-color="#a855f7"/>
+            <stop offset="1" stop-color="#f472b6"/>
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="12" fill="url(#logoGrad)"/>
+        <circle cx="33" cy="15" r="4.5" fill="#fff"/>
+        <path d="M6 38 L19 19 L28 31 L33 25 L42 38 Z" fill="#fff"/>
+      </svg>
+      <span class="brand-name">Frames</span>
+    </div>
+
+    <h1>Where every <span>moment</span> finds its frame</h1>
+    <p>Nature, cities, wildlife and mountains, all in one place</p>
+  </header>
+
+  <!-- Filter buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="animals">Animals</button>
+    <button class="filter-btn" data-filter="mountains">Mountains</button>
+  </div>
+
+  <!-- Gallery grid -->
+  <main class="gallery" id="gallery">
+
+    <figure class="item" data-category="nature">
+      <img src="assets/nature/nature1.png" alt="Nature 1" loading="lazy">
+      <figcaption>Nature 1</figcaption>
+    </figure>
+
+    <figure class="item" data-category="city">
+      <img src="assets/city/city1.png" alt="City 1" loading="lazy">
+      <figcaption>City 1</figcaption>
+    </figure>
+
+    <figure class="item" data-category="animals">
+      <img src="assets/animals/animals1.png" alt="Animals 1" loading="lazy">
+      <figcaption>Animals 1</figcaption>
+    </figure>
+
+    <figure class="item" data-category="mountains">
+      <img src="assets/mountain/mountain1.png" alt="Mountain 1" loading="lazy">
+      <figcaption>Mountain 1</figcaption>
+    </figure>
+
+    <figure class="item" data-category="nature">
+      <img src="assets/nature/nature2.png" alt="Nature 2" loading="lazy">
+      <figcaption>Nature 2</figcaption>
+    </figure>
+
+    <figure class="item" data-category="city">
+      <img src="assets/city/city2.png" alt="City 2" loading="lazy">
+      <figcaption>City 2</figcaption>
+    </figure>
+
+    <figure class="item" data-category="animals">
+      <img src="assets/animals/animals2.png" alt="Animals 2" loading="lazy">
+      <figcaption>Animals 2</figcaption>
+    </figure>
+
+    <figure class="item" data-category="mountains">
+      <img src="assets/mountain/mountain2.png" alt="Mountain 2" loading="lazy">
+      <figcaption>Mountain 2</figcaption>
+    </figure>
+
+    <figure class="item" data-category="nature">
+      <img src="assets/nature/nature3.png" alt="Nature 3" loading="lazy">
+      <figcaption>Nature 3</figcaption>
+    </figure>
+
+    <figure class="item" data-category="city">
+      <img src="assets/city/city3.png" alt="City 3" loading="lazy">
+      <figcaption>City 3</figcaption>
+    </figure>
+
+    <figure class="item" data-category="animals">
+      <img src="assets/animals/animals3.png" alt="Animals 3" loading="lazy">
+      <figcaption>Animals 3</figcaption>
+    </figure>
+
+    <figure class="item" data-category="mountains">
+      <img src="assets/mountain/mountain3.png" alt="Mountain 3" loading="lazy">
+      <figcaption>Mountain 3</figcaption>
+    </figure>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lb-close" title="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-nav lb-prev" id="lb-prev" title="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <figure class="lb-content">
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+
+    <button class="lb-nav lb-next" id="lb-next" title="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    <span class="lb-counter" id="lb-counter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
