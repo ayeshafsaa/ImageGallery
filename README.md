@@ -2,7 +2,7 @@
 
 A responsive image gallery built with HTML, CSS and vanilla JavaScript, with category filters, a lightbox viewer and smooth hover effects.
 
-**Live demo:** [YOUR-LINK-HERE](YOUR-LINK-HERE)
+**Live demo:** https://image-gallery-sigma-tan.vercel.app/
 
 ## Features
 
